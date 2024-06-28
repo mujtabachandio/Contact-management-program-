@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4b4d48;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.contacts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    animation: slideUp 0.5s ease forwards;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-info span {
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.contact-actions button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-actions .update {
+    box-shadow: 0px 0px 0px 0px black;
+    background-color: #28a745;
+    color: #fff;
+    transition: 0.2s ease-in-out;
+}
+
+.contact-actions .update:hover {
+    background-color: #218838;
+    box-shadow: 5px 2px 1px 1px black;
+    color: black;
+}
+
+.contact-actions .delete {
+    box-shadow: 0px 0px 0px 0px black;
+    background-color: #dc3545;
+    color: #fff;
+    transition: 0.2s ease-in-out;
+}
+
+.contact-actions .delete:hover {
+    box-shadow: 5px 2px 1px 1px black;
+    background-color: #c82333;
+    color: black;
+    border:2px solid  black ;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
